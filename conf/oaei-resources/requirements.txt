@@ -1,0 +1,7 @@
+numpy==1.19.5
+tensorflow==1.14.0
+Owlready2==0.33
+tqdm==4.62.2
+six==1.15.0
+fuzzywuzzy==0.18.0
+beautifulsoup4==4.9.3

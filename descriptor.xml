@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+old schema: http://www.seals-project.eu/schemas/2010-08-15/ToolPackageDescriptor.xsd
+new schema: http://www.seals-project.eu/resources/res/tools/bundle/v1
+-->
+
+<ns:package 	  
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:ns="http://www.seals-project.eu/resources/res/tools/bundle/v1"
+	id="external-python-matcher-seals" 
+	version="1.0">
+	<ns:description>External Python matcher demo</ns:description>
+	<ns:endorsement>
+		<ns:copyright>(C) Mannheim, 2019</ns:copyright>
+		<ns:license>GNU Lesser General Public License 2.1 or above</ns:license>
+	</ns:endorsement>
+	<ns:wrapper>
+		<ns:management>
+			<ns:deploy>
+				<ns:executable xsi:type="ns:ShellScript">
+					<ns:script>deploy.bat</ns:script>
+					<ns:error-log>deploy-error.log</ns:error-log>
+				</ns:executable>
+			</ns:deploy>
+			<ns:start>
+				<ns:executable xsi:type="ns:ShellScript">
+					<ns:script>start.bat</ns:script>
+					<ns:error-log>start-error.log</ns:error-log>
+				</ns:executable>
+			</ns:start>
+			<ns:stop>
+				<ns:executable xsi:type="ns:ShellScript">
+					<ns:script>stop.bat</ns:script>
+					<ns:error-log>stop-error.log</ns:error-log>
+				</ns:executable>
+			</ns:stop>
+			<ns:undeploy>
+				<ns:executable xsi:type="ns:ShellScript">
+					<ns:script>undeploy.bat</ns:script>
+					<ns:error-log>undeploy-error.log</ns:error-log>
+				</ns:executable>
+			</ns:undeploy>
+		</ns:management>
+		<ns:bridge>
+			<!-- references relative to bin folder -->
+			<ns:class>de.uni_mannheim.informatik.dws.melt.matching_base.receiver.SealsWrapper</ns:class>
+			<ns:jar>matching-base-3.0.jar</ns:jar>
+			<ns:dependencies>
+				<ns:lib>lib/external-python-matcher-seals-1.0.jar</ns:lib>
+				<ns:lib>lib/httpmime-4.5.13.jar</ns:lib>
+				<ns:lib>lib/json-20201115.jar</ns:lib>
+				<ns:lib>lib/matching-base-3.0.jar</ns:lib>
+				<ns:lib>lib/snakeyaml-1.27.jar</ns:lib>
+			</ns:dependencies>
+
+		</ns:bridge>
+	</ns:wrapper>
+</ns:package>
+
