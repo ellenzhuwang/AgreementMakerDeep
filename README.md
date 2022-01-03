@@ -2,7 +2,7 @@
 
 1. Introduction
 
-AgreementMakerDeep (AMD) is a new ontology matching system inspired by AgreementMaker, AgreementMakerLight(AML) and BootEA. This year is the first time that AMD participates in OAEI. It is designed with the main goal of higher efficiency for ontology matching problems by applying knowledge graph embedding methods.
+   AgreementMakerDeep (AMD) is a new ontology matching system inspired by AgreementMaker, AgreementMakerLight(AML) and BootEA. This year is the first time that AMD participates    in OAEI. It is designed with the main goal of higher efficiency for ontology matching problems by applying knowledge graph embedding methods.
 
 2. Requirements
 
@@ -22,11 +22,11 @@ AgreementMakerDeep (AMD) is a new ontology matching system inspired by Agreement
 
 3. Usage
 
-If any changes to the model, then use [MELT](http://oaei.ontologymatching.org/2021/melt/index.html) to wrapped and evalute.
+    If any changes to the model, then use [MELT](http://oaei.ontologymatching.org/2021/melt/index.html) to wrapped and evalute.
 
 Reference
 
-If you find this repo useful, please consider citing:
+   If you find this repo useful, please consider citing:
 ```
 @article{wangagreementmakerdeep,
   title={AgreementMakerDeep Results for OAEI2021},
