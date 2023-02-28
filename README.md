@@ -34,3 +34,11 @@ Reference
   year={2021}
 }
 ```
+and 
+```
+@article{wang2022amd,
+  title={AMD Results for OAEI 2022},
+  author={Wang, Zhu},
+  year={2022}
+}
+```
